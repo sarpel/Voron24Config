@@ -69,9 +69,4 @@ path = ~/CanBoot
 origin = https://github.com/Arksine/CanBoot.git
 is_system_service = False
 
-[update_manager print_area_bed_mesh]
-type = git_repo
-path = ~/print_area_bed_mesh
-origin = https://github.com/Turge08/print_area_bed_mesh.git
-is_system_service = False
 
