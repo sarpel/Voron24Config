@@ -69,4 +69,34 @@ path = ~/CanBoot
 origin = https://github.com/Arksine/CanBoot.git
 is_system_service = False
 
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type: git_repo
+channel: dev
+path: ~/Klipper-Adaptive-Meshing-Purging
+origin: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services: klipper
+primary_branch: main
+
+[update_manager moonraker-obico]
+type: git_repo
+path: ~/moonraker-obico
+origin: https://github.com/TheSpaghettiDetective/moonraker-obico.git
+env: /home/pi/moonraker-obico-env/bin/python
+requirements: requirements.txt
+install_script: install.sh
+managed_services:
+  moonraker-obico
+
+[include octoeverywhere-system.cfg]
+
+[update_manager mobileraker]
+type: git_repo
+path: ~/mobileraker_companion
+origin: https://github.com/Clon1998/mobileraker_companion.git
+primary_branch:main
+managed_services: mobileraker
+env: ~/mobileraker-env/bin/python
+requirements: scripts/mobileraker-requirements.txt
+install_script: scripts/install-mobileraker-companion.sh
+
 
