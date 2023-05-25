@@ -1,4 +1,4 @@
 [Variables]
 filament_loaded = False
-filament_sensor = {'runout': 1}
+filament_sensor = {'runout': 0}
 
